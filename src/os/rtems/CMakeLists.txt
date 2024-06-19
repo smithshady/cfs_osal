@@ -56,6 +56,7 @@ else ()
 endif ()
 
 # Leverage the "standard" BSD socket code if network is enabled
+set(OSAL_CONFIG_INCLUDE_NETWORK FALSE)
 if (OSAL_CONFIG_INCLUDE_NETWORK)
     list(APPEND RTEMS_IMPL_SRCLIST
         src/os-impl-network.c

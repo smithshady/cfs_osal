@@ -40,6 +40,7 @@ else ()
     )
 endif ()
 
+set(RTEMS_NO_CMDLINE TRUE) # TODO: where to actually set?
 if (RTEMS_NO_CMDLINE)
     list(APPEND OS_BSP_SRCLIST
         src/bsp_no_cmdline.c
